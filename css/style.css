@@ -1,0 +1,407 @@
+@font-face {
+    font-family: openSans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: openSasn-bold;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: openSans-lite;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+
+body{
+    font-size: .9rem;
+    font-family: openSans;
+    background-color: #141414;
+}
+
+
+.ff-Sans{
+    font-family: openSans;
+}
+
+
+.ff-Sans-lite{
+    font-family: openSans-lite;
+}
+
+
+.ff-Sans-bold{
+    font-family: openSasn-bold;
+}
+
+
+
+.header{
+    padding: 50px 30px 20px;
+    box-sizing: border-box;
+}
+
+.h-logo img{
+    width: 100px;
+}
+
+
+
+.h-main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: right;
+
+}
+
+
+.hm-search{
+    width: 50%;
+    background-color: #2B2B2B;
+    padding: 5px;
+    padding-right: 15px;
+    border-radius: 50px;
+}
+
+.hm-search input[type='text']{
+    width: 100%;
+    background-color: transparent;
+    font-size: .7rem;
+}
+
+
+.hms-categories select{
+    background-color: #4B4B4B;
+    height: 100%;
+    border-radius: 50px;
+    color: white;
+    font-size: .7rem;
+    padding: 0px 20px;
+
+}
+
+/* .hmu-user {
+    display: flex;
+    align-items: center;
+} */
+
+.hmu-user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.hmu-user{
+    border-left: 1px solid rgb(61, 61, 61);
+}
+
+.hmu-icon{
+    padding: 0 20px;
+}
+
+.hmu-icon ul li{
+    position: relative;
+}
+
+.hmu-icon ul li a{
+    color: white;
+    font-size: 1.7rem;
+    margin: 0 10px;
+
+}
+
+.hmu-icon ul li .hmu-badge{
+    /* color: white; */
+    font-size: .8rem;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+.hmu-icon ul li .hmu-new{
+    display: block;
+    position: absolute;
+    bottom: -11px;
+    left: 22px;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.user-menu{
+    position: absolute;
+    background-color: rgb(58, 58, 58);
+    border-radius: 10px 0 10px 10px;
+    border: 1px solid rgb(100, 100, 100);
+    width: 100px;
+    padding: 10px;
+    top: 58px;
+    left: -41px;
+}
+.user-menu ul li{
+    width: 100%;
+    margin: 10px 0;
+    
+
+}
+
+
+.main{
+    height: calc(100vh - 115px);
+}
+
+
+.explore{
+    width: 300px;
+    height: 100%;
+}
+
+.shop-side{
+    width: calc(100% - 300px);
+    height: 100%;
+}
+
+.header-main{
+    padding: 30px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    /* background-color: #D31E27; */
+    background: linear-gradient(150deg, #D31E27 0%, #67191D 95%);
+
+}
+
+
+
+.hm-menu{
+    padding: 30px 0 0;
+}
+
+.hm-menu li{
+    width: 100%;
+    font-family: openSans-lite;
+    box-sizing: border-box;
+    /* padding: ; */
+}
+
+.hm-menu li a {
+    padding: 15px 30px;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.hm-menu li a:hover{
+    background-color: #D31E27;
+
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.hm-menu li i {
+    font-size: 1.5rem;
+}
+
+.menu-bottom{
+    border-top: 1px solid rgb(65, 65, 65);
+}
+
+
+.ssh-large{
+    width: calc(100% - 350px);
+    height: 300px;
+    background-color: #2B2B2B;
+    border-radius: 15px;
+}
+
+
+.ssh-small{
+    width: 300px;
+    height: 300px;
+    background-color: #2B2B2B;
+    border-radius: 15px;
+}
+
+.sshl-img{
+    width: 350px;
+    height: 300px;
+}
+
+.sshl-img img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    /* transform: rotate(-10deg); */
+    animation: img alternate 5s ease-in-out infinite;
+}
+
+@keyframes img{
+
+    0%{
+        transform: rotate(-15deg);
+    } 100% {
+        transform: rotate(15deg);
+    }
+}
+
+.sshl-titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+
+.sshl-titles ul li img{
+    filter: invert(1);
+    width: 60px;
+    margin: 10px 20px;
+}
+
+
+
+.ssh-center{
+    display: flex;
+    justify-content: center;
+}
+
+.ssh-small{
+    overflow: hidden;
+}
+.ssh-small img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.main-header-btn{
+    background-color: #4B4B4B;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    bottom: 40px;
+    right: 60px;
+}
+
+.main-header-btn:hover{
+    background-color: #6d6d6d;
+}
+
+
+.ssi-header{
+    width: 100%;
+    padding: 30px 30px 0;
+    /* background-color: red; */
+}
+
+.ssi-arrows a{
+    width: 40px;
+    height: 40px;
+    background-color: #2F2F2F;
+    color: white;
+    border-radius: 50px;
+}
+
+.ssi-arrows a:hover{
+    transform: scale(1.2);
+    background-color: #494949;
+    transition: .3s;
+}
+
+
+.ssi-items-box{
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+
+.ssii-scroll{
+    display: flex;
+    padding: 30px 0;
+}
+
+.ssii-item{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    /* height: 300px; */
+    background-color: #222222;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.ssii-item:hover{
+    background-color: #353535;
+    transform: scale(1.05);
+    transition: .3s;
+    z-index: 200;
+}
+
+.ssii-item .top-side{
+    background-color: #464646;
+    height: 200px;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.ssii-item .top-side img{
+    width: 80%;
+}
+
+.ssii-item .freeshop{
+    position: absolute;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(126, 126, 126);
+    color: white;
+    font-size: .6rem;
+    background-color: #686868;
+    top: 10px;
+    left: 10px;
+}
+
+.ssii-item .dollars{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    background-color: #DE0F35;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.ssii-item .bot-side{
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.price-color ul li{
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+    border-radius: 5px;
+}
