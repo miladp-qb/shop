@@ -156,7 +156,7 @@ body{
 
 .explore{
     width: 300px;
-    height: 100%;
+    height: calc(100vh - 115px);
 }
 
 .shop-side{
@@ -190,7 +190,7 @@ body{
 
 
 .hm-menu{
-    padding: 30px 0 0;
+    padding: 30px 0;
 }
 .hmm-bot{
     width: 100%;

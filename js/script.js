@@ -1,18 +1,17 @@
-window.alert("در رزولوشن کمتر از 820 پیکسل . ایکون های بالا سمت راست به داخل منوی user وارد میشوند ")
-
-
 let userMenuBtn = document.querySelector('.user-menu-btn')
 
 
 
-userMenuBtn.addEventListener('click' , function(e){
-    e.preventDefault();
-
-    let userMenu = document.querySelector('.user-menu')
-
-    userMenu.classList.toggle('none')
-})
-
+if(userMenuBtn){
+    userMenuBtn.addEventListener('click' , function(e){
+        e.preventDefault();
+    
+        let userMenu = document.querySelector('.user-menu')
+    
+        userMenu.classList.toggle('none')
+    })
+    
+}
 
 
 
@@ -38,8 +37,6 @@ if(scrollBox){
     })
 
 }
-
-console.log(scrollBox.scrollLeft)
 
 
 
