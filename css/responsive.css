@@ -111,6 +111,9 @@
     }
 
     .mobile-user-menu{
+        display: block !important;
+    }
+    .mobile-user-menu-ul{
         /* display: block !important; */
         display: flex !important;
         color: white;
