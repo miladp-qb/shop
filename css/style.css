@@ -333,6 +333,7 @@ body{
 .ssi-items-box{
     width: 100%;
     padding: 0 30px;
+    box-sizing: border-box;
     display: flex;
     overflow-x: scroll;
 }
